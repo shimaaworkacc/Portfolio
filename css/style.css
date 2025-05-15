@@ -1,0 +1,210 @@
+:root {
+    scroll-padding-bottom: 5rem;
+    --bs-tertiary-bg-rgb: 255, 206, 206;
+    --main-color:  #f4e7e3;
+    --text-color: rgb(0, 0, 0);
+    
+}
+.main-color {
+    background-color: var(--main-color);
+
+}   
+* {
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: var(--main-color);
+    height: 40px;
+
+}
+
+
+h1 {
+    top: 30%;
+}
+
+.line {
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    transition: all 0.5s;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+
+.nav-link {
+    position: relative;
+}
+
+
+header {
+    background-image: url('../images/main-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+}
+
+
+h1,
+h2,
+h3,
+.text-mont {
+    font-family: "Montserrat", sans-serif;
+}
+
+.progress {
+    height: 1.5rem;
+}
+
+.reverse-light {
+    background-color: var(--text-color);
+    color: var(--main-color);
+    ;
+}
+
+.reverse-light:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.reverse-dark {
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+}
+
+.reverse-dark:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+/* Chat Icon */
+.chat-icon {
+    top: 30%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1050;
+}
+
+.chat-section {
+top: 30%;
+  height: 50%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1040;
+}
+
+.chat-section.active {
+  transform: translateX(0);
+}
+
+
+
+
+.transition {
+    transition: all 0.5s;
+
+}
+
+.card-hover:hover .reverse {
+    --bs-secondary-rgb: 28, 28, 28;
+    color: #fff;
+    --bs-bg-opacity: 1;
+}
+
+#works nav button {
+    --bs-nav-pills-link-active-bg: transparent;
+    --bs-nav-link-hover-color: black;
+    --bs-nav-pills-link-active-color: black;
+    --bs-nav-link-color: black;
+    font-weight: 900;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    position: relative;
+
+    .line {
+        width: 80%;
+
+    }
+
+}
+
+.invesible .child {
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    transform: translateY(5px);
+}
+
+.invesible:hover .child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel button {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+button.button {
+    bottom: 20%;
+}
+
+
+.invesible2 .child {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0.5) rotateY(180deg);
+}
+
+.invesible2:hover .child {
+    opacity: 1;
+    transform: scale(0.95) rotateY(360deg);
+}
+
+.invesible2 div.image {
+    overflow: hidden;
+}
+
+.invesible2:hover img {
+    transform: scale(1.2);
+}
+
+footer.bg-dark {
+    color: #748182;
+    ;
+}
+
+/* 
+
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px 
+*/
