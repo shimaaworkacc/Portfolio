@@ -12,566 +12,257 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <!-- Add in <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Add before </body> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="bg-body-tertiary bg-opacity-10">
+<body class="bg-body-tertiary bg-opacity-75">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
   <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <main data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
-    <nav class="navbar navbar-expand-lg w-100 position-fixed top-0 z-3" id="navbar">
-      <div class="w-100 px-5">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0">
-            <li class="nav-item me-auto">
-              <a class="nav-link active-home navbar-brand fw-bold text-uppercase me-5" aria-current="page"
-                href="#home">Shimaa
-                Ibrahim</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#works">Works</a>
-            </li>
+  <nav class="navbar navbar-expand-lg w-100 position-fixed top-0 z-3 shadow" id="navbar">
+    <div class="w-100 px-5">
+      <button class="navbar-toggler h-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon h-100"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0">
+          <li class="nav-item me-auto">
+            <a class="nav-link active-home navbar-brand fw-bold text-uppercase me-5" aria-current="page"
+              href="#home">Shimaa
+              Ibrahim</a>
+          </li>
+          <li class="nav-item mx-2 col-1">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-2 col-1">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item mx-2 col-1">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="ps-lg-5" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
 
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="icon">
+      <div id="chat-icon" class="chat-icon position-fixed end-0 m-3 reverse-dark">
+        <i class="fa fa-comments fs-3"></i>
+      </div>
+      <div id="chat-section" class="chat-section position-fixed end-0 bg-light shadow-lg col-12 col-md-6 col-lg-4">
+        <div class="chat-header bg-dark p-1 d-flex justify-content-between align-items-center">
+          <span>Chat</span>
+        </div>
+        <div class="p-3">
+          <p>Welcome! How can we help you?</p>
+          <textarea class="mb-3 w-100" rows="3" placeholder="Type your message..."></textarea>
+          <button type="button" class="btn reverse-light col-6 border-0 transition mx-1">Send</button>
         </div>
       </div>
-    </nav>
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <header id="home" class="vh-100 w-100 text-white bg-light bg-opacity-50 mt-4" data-scroll-index="0">
-      <div class="position-absolute top-50 mt-4 start-50 translate-middle w-100 text-center">
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="container my-5" id="about">
+      <div class="position-relative start-50 translate-middle w-100 text-center header">
         <div class="animated text-start d-inline-block fs-1 text-black">
           <span id="element"></span>
         </div>
       </div>
-    </header>
-    <!-- Chat Icon and Chat Section -->
-    <div id="chat-icon" class="chat-icon position-fixed end-0 m-3 reverse-dark">
-      <i class="fa fa-comments fs-3"></i>
-    </div>
-    <div id="chat-section" class="chat-section position-fixed end-0 bg-light shadow-lg col-12 col-md-6 col-lg-4">
-      <div class="chat-header bg-dark p-1 d-flex justify-content-between align-items-center">
-        <span>Chat</span>
+      <div class="border-0 my-5 mx-auto p-2 row main-color rounded-3">
+        <div class="col-12 p-0 m-0">
+          <h2 class="fw-bold">About Me.</h2>
+          <span class="fs-6 fw-light text-black">Web Developer| Web Designer| Project Manager</span>
+          <p class="card-text fs-6 text-body-secondary mt-3 ">
+            I am <span class="fw-bold text-secondary">Shimaa Ibrahim</span>. Founder and CEO of S.Tech.S.O corporation. I am a
+            web developer with over 3 years of experience in the field. I have a passion for creating beautiful and
+            business websites to large-scale e-commerce platforms. My expertise includes front-end and back-end development,
+             UI/UX, and project management. I am committed to delivering high-quality solutions that drive results
+              and exceed client expectations.
+          </p>
+        </div>
       </div>
-      <div class="p-3">
-        <p>Welcome! How can we help you?</p>
-        <textarea class="mb-3 w-100" rows="3" placeholder="Type your message..."></textarea>
-        <button type="button" class="btn reverse-light col-6 border-0 transition mx-1">Send</button>
-      </div>
-    </div>
-    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="container py-5 my-2" id="about">
-      <div class="container border-0 my-5 mx-auto p-1 row">
-        <div class="col-12">
-          <div class=" p-0 m-0">
-            <h2 class="fw-bold">About Me.</h2>
-            <span class="fs-6 fw-light text-black">Web Developer| Web Designer| Project Manager</span>
-            <p class="card-text fs-6 text-body-secondary mt-3 ">
-              I am <span class="fw-bold text-secondary">Shimaa Ibrahim</span>. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. It has
-              survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
-            </p>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="container my-5" id="stats">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="stat-box p-4 bg-white shadow rounded">
+            <i class="fa fa-folder-open fa-2x mb-2"></i>
+            <h2 class="counter" data-target="30">0</h2>
+            <p class="mb-0">Projects Completed</p>
           </div>
-          <div class="col-12 text-body-secondary fs-5">
-            <div class="progress my-4" role="progressbar" aria-label="Example with label" aria-valuenow="95"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-dark rounded-2" style="width: 95%">Web Design 95%</div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="stat-box p-4 bg-white shadow rounded">
+            <i class="fa fa-briefcase fa-2x mb-2"></i>
+            <h2 class="counter" data-target="3">0</h2>
+            <p class="mb-0">Years of Experience</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="stat-box p-4 bg-white shadow rounded">
+            <i class="fa fa-users fa-2x mb-2"></i>
+            <h2 class="counter" data-target="12">0</h2>
+            <p class="mb-0">Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container my-5">
+      <div class="swiper ribbon-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/img1.jpg" style="width:200px; height:auto;" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="images/img2.jpg" style="width:200px; height:auto;" alt="Image 2"></div>
+          <div class="swiper-slide"><img src="images/img3.jpg" style="width:200px; height:auto;" alt="Image 3"></div>
+          <div class="swiper-slide"><img src="images/img4.jpg" style="width:200px; height:auto;" alt="Image 4"></div>
+          <div class="swiper-slide"><img src="images/img5.jpg" style="width:200px; height:auto;" alt="Image 5"></div>
+          <div class="swiper-slide"><img src="images/img6.jpg" style="width:200px; height:auto;" alt="Image 6"></div>
+          <div class="swiper-slide"><img src="images/img7.jpg" style="width:200px; height:auto;" alt="Image 7"></div>
+          <div class="swiper-slide"><img src="images/img8.jpg" style="width:200px; height:auto;" alt="Image 8"></div>
+          <div class="swiper-slide"><img src="images/img9.jpg" style="width:200px; height:auto;" alt="Image 9"></div>
+          <div class="swiper-slide"><img src="images/img10.jpg" style="width:200px; height:auto;" alt="Image 10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container my-5">
+      <div class="swiper product-swiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/main-bg.jpeg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/car.jpg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ecommerce.jpeg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="container my-5" id="products">
+      <div class="w-25 text-center mx-auto my-5 px-5">
+        <div class="p-1 reverse-light rounded-pill border-0 transition h4">
+          Products
+        </div>
+      </div>
+      <div class="row row-gap-4">
+        <!-- Product Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="product-card position-relative text-center shadow border-0 transition">
+            <div class="product-image">
+              <img src="images/ecommerce.jpeg" class="h-50 img-fluid" alt="Website Template 1">
             </div>
-            <div class="progress my-4" role="progressbar" aria-label="Example with label" aria-valuenow="80"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-dark rounded-2" style="width: 80%">Branding 80%</div>
+            <div class="product-info p-3">
+              <h4 class="fw-bold">E-Commerce Website</h4>
+              <p class="text-secondary">$49</p>
+              <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
+              <button class="btn btn-dark reverse-light border-0 transition"
+                onclick="window.open('ecommerce/index.html', '_blank')">Explore</button>
             </div>
-            <div class="progress my-4" role="progressbar" aria-label="Example with label" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-dark rounded-2" style="width: 90%">Development 90%</div>
+          </div>
+        </div>
+        <!-- Product Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="product-card position-relative text-center shadow border-0 transition">
+            <div class="product-image">
+              <img src="images/chat.jpeg" class="h-50 img-fluid" alt="Website Template 2">
             </div>
-            <div class="my-5 row justify-content-center">
-              <button type="button" class="btn reverse-light col-2 border-0  transition mx-1">Download C.V</button>
-              <button type="button" class="btn reverse-dark col-2 border-0 transition mx-1">Contact me</button>
+            <div class="product-info p-3">
+              <h4 class="fw-bold">Chat Website</h4>
+              <p class="text-secondary">$59</p>
+              <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
+              <button class="btn btn-dark reverse-light border-0 transition"
+                onclick="window.open('chat/index.html', '_blank')">Explore</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card -->
+        <div class="col-12 col-md-6 col-lg-4" onclick="window.open('cinema/index.html', '_blank')">
+          <div class="product-card position-relative text-center shadow border-0 transition">
+            <div class="product-image">
+              <img src="images/cinema.jpeg" class="h-50 img-fluid" alt="Website Template 3">
+            </div>
+            <div class="product-info p-3">
+              <h4 class="fw-bold">Cinema Website</h4>
+              <p class="text-secondary">$69</p>
+              <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" onclick="window.open('car/index.html', '_blank')">
+          <div class="product-card position-relative text-center shadow border-0 transition">
+            <div class="product-image">
+              <img src="images/car.jpg" class="h-50 img-fluid" alt="Website Template 3">
+            </div>
+            <div class="product-info p-3">
+              <h4 class="fw-bold">Car hire Website</h4>
+              <p class="text-secondary">$69</p>
+              <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" onclick="window.open('elearning/index.html', '_blank')">
+          <div class="product-card position-relative text-center shadow border-0 transition">
+            <div class="product-image">
+              <img src="images/elearning.jpeg" class="h-50 img-fluid" alt="Website Template 3">
+            </div>
+            <div class="product-info p-3">
+              <h4 class="fw-bold">E-Learning Website</h4>
+              <p class="text-secondary">$69</p>
+              <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <section class="py-5 my-2 works" id="works">
+    <section class="container my-5" id="contact">
       <div class="w-25 text-center mx-auto my-5 px-5">
         <div class="p-1 reverse-light rounded-pill border-0 transition h4">
-          Services
+          Contact us
         </div>
       </div>
-      <nav>
-        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
-              type="button" role="tab" aria-controls="pills-all" aria-selected="true">All <div class="line"></div>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-brand-tab" data-bs-toggle="pill" data-bs-target="#pills-brand"
-              type="button" role="tab" aria-controls="pills-brand" aria-selected="false">Brand <div class="line"></div>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design"
-              type="button" role="tab" aria-controls="pills-design" aria-selected="false">Design <div class="line">
-              </div></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-graphic"
-              type="button" role="tab" aria-controls="pills-graphic" aria-selected="false">Graphic <div class="line">
-              </div></button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
-            tabindex="0">
-            <div class="container mx-auto row row-gap-3">
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/1.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p1"></i>
-                </div>
-                <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="p1Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/1.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/2.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p2"></i>
-                </div>
-                <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="p2Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/2.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/3.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p3"></i>
-                </div>
-                <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="p3Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/3.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/4.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p4"></i>
-                </div>
-                <div class="modal fade" id="p4" tabindex="-1" aria-labelledby="p4Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/4.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/5.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p5"></i>
-                </div>
-                <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="p5Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/5.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/6.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p6"></i>
-                </div>
-                <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="p6Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/6.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="px-lg-5">
+        <div class="social-icons d-flex justify-content-center my-4">
+          <a href="https://www.linkedin.com/in/shimaa-ibrahim-33469921b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" class="icon-link mx-2">
+            <div class="icon-circle">
+              <i class="fa fa-linkedin"></i>
             </div>
-
-          </div>
-          <div class="tab-pane fade" id="pills-brand" role="tabpanel" aria-labelledby="pills-brand-tab" tabindex="0">
-            <div class="container mx-auto row">
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/4.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p4"></i>
-                </div>
-                <div class="modal fade" id="p4" tabindex="-1" aria-labelledby="p4Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/4.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/6.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p6"></i>
-                </div>
-                <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="p6Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/6.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </a>
+          <a href="https://www.instagram.com/stechso?igsh=dXVzMmNxeGgzZnBk" target="_blank" class="icon-link mx-2">
+            <div class="icon-circle">
+              <i class="fa fa-instagram"></i>
             </div>
-          </div>
-          <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab" tabindex="0">
-            <div class="container mx-auto row">
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/2.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p2"></i>
-                </div>
-                <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="p2Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/2.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/5.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p5"></i>
-                </div>
-                <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="p5Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/5.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </a>
+          <a href="https://github.com/shimaaworkacc" target="_blank" class="icon-link mx-2">
+            <div class="icon-circle">
+              <i class="fa fa-github"></i>
             </div>
-          </div>
-          <div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab"
-            tabindex="0">
-            <div class="container mx-auto row">
-
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/1.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p1"></i>
-                </div>
-                <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="p1Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/1.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/3.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p3"></i>
-                </div>
-                <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="p3Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/3.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4 text-center position-relative invesible">
-                <div class="w-100"> <img src="images/portfolio/5.jpg" class="w-100" alt="...">
-                </div>
-                <div class="p-2 position-absolute bg-white text-light child transition">
-                  <span class="text-dark position-absolute top-0 mt-5">
-                    Web Design
-                  </span>
-                  <i class="fa fa-search-plus rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark"
-                    data-bs-toggle="modal" data-bs-target="#p5"></i>
-                </div>
-                <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="p5Label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <img src="images/portfolio/5.jpg" class="w-100 img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </a>
+          <a href="mailto:shimaaworkacc@gmail.com" target="_blank" class="icon-link mx-2">
+            <div class="icon-circle">
+              <i class="fa fa-envelope"></i>
             </div>
-          </div>
+          </a>
         </div>
-      </nav>
-
-
-    </section>
-
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="py-5 my-2 text-center">
-      <div class="container mx-auto row justify-content-between">
-        <div class="col-12 col-sm-3 p-3">
-          <i class="fa fa-users fs-1 col-12"></i>
-          <span class="col-12 fs-2 fw-bolder my-2">850</span>
-          <p class="col-12">
-            Happy Customers</p>
-        </div>
-        <div class="col-12 col-sm-3 p-3">
-          <i class="fa fa-thumbs-up fs-1 col-12"></i>
-          <span class="col-12 fs-2 fw-bolder my-2">230</span>
-          <p class="col-12">
-            Complete Projects
-          </p>
-        </div>
-        <div class="col-12 col-sm-3 p-3">
-          <i class="fa fa-bullhorn fs-1 col-12"></i>
-          <span class="col-12 fs-2 fw-bolder my-2">9450</span>
-          <p class="col-12">
-            Lines Of Code
-          </p>
-        </div>
-        <div class="col-12 col-sm-3 p-3">
-          <i class="fa fa-cloud-download fs-1 col-12"></i>
-          <span class="col-12 fs-2 fw-bolder my-2">780</span>
-          <p class="col-12">
-            Files Downloaded</p>
-        </div>
-
-      </div>
-    </section>
-    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="py-5 my-2 bg-secondary bg-opacity-10" id="team">
-      <div class="w-25 text-center mx-auto my-5 px-5">
-        <div class="p-1 reverse-light rounded-pill border-0 transition h4">
-          Services
-        </div>
-      </div>
-      <div class="container mx-auto row">
-        <div class="col-12 col-md-6 col-md-6 col-lg-4 card-hover pb-2">
-          <div
-            class="shadow border-0 text-center card-hover bg-dark bg-opacity-75 text-light invesible2 rounded-bottom-2">
-            <div class="w-100 p-0 position-relative image"> <img src="images/1.jpg" class="w-100 transition" alt="...">
-              <div class="p-2 position-absolute bg-white text-light child transition">
-                <i
-                  class="fa fa-facebook rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-twitter rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-pinterest rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-linkedin rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-              </div>
-            </div>
-
-            <div class="p-4">
-              <h4 class=" card-title col-12 fw-bolder">John Doe</h4>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Front-End </span><br>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Developer </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 card-hover pb-2">
-          <div
-            class="shadow border-0 text-center card-hover bg-dark bg-opacity-75 text-light invesible2  rounded-bottom-2">
-            <div class="w-100 p-0 position-relative image"> <img src="images/2.jpg" class="w-100 transition" alt="...">
-              <div class="p-2 position-absolute bg-white text-light child transition">
-                <i
-                  class="fa fa-facebook rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-twitter rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-pinterest rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-linkedin rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-              </div>
-            </div>
-
-            <div class="p-4">
-              <h4 class=" card-title col-12 fw-bolder">Dave Wood</h4>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Front-End </span><br>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Developer </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 card-hover pb-2">
-          <div
-            class="shadow border-0 text-center card-hover bg-dark bg-opacity-75 text-light invesible2  rounded-bottom-2">
-            <div class="w-100 p-0 position-relative image"> <img src="images/1.jpg" class="w-100 transition" alt="...">
-              <div class="p-2 position-absolute bg-white text-light child transition">
-                <i
-                  class="fa fa-facebook rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-twitter rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-pinterest rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-                <i
-                  class="fa fa-linkedin rounded-circle p-2 reverse-light position-relative top-50 border border-1 border-dark icon2"></i>
-              </div>
-            </div>
-
-            <div class="p-4">
-              <h4 class=" card-title col-12 fw-bolder">Claire Chedd</h4>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Front-End </span><br>
-              <span class="card-text my-2 fw-bold text-uppercase fs-5 w-100"> Developer </span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="py-5 my-2" id="contact">
-      <div class="w-25 text-center mx-auto my-5 px-5">
-        <div class="p-1 reverse-light rounded-pill border-0 transition h4">
-          Services
-        </div>
-      </div>
-      <div class="container px-lg-5">
-
-        <div class="container mx-auto row">
-          <div class="col-12 col-lg-4 card-hover">
-            <div class="card border-0 text-center my-3 card-hover py-5">
-              <div class="card-body text-center row">
-                <div class="rounded-circle icon mx-auto mb-3 p-3 bg-secondary bg-opacity-10 reverse transition">
-                  <div class=" position-relative top-50 start-50 translate-middle fs-3">
-                    <i class="fa fa-location-arrow"></i>
-                  </div>
-                </div>
-                <h4 class="h5 card-title col-12 fw-bolder">Address</h4>
-                <p class="card-text">
-
-                  6834 Hollywood Blvd - Los Angeles CA </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 card-hover">
-            <div class="card border-0 text-center my-3 card-hover py-5">
-              <div class="card-body text-center row">
-                <div class="rounded-circle icon mx-auto mb-3 p-3 bg-secondary bg-opacity-10 reverse transition">
-                  <div class=" position-relative top-50 start-50 translate-middle fs-3">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                </div>
-                <h4 class="h5 card-title col-12 fw-bolder">Email</h4>
-                <p class="card-text">
-                  Support@website.com </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 card-hover">
-            <div class="card border-0 text-center my-3 card-hover py-5">
-              <div class="card-body text-center row">
-                <div class="rounded-circle icon mx-auto mb-3 p-3 bg-secondary bg-opacity-10 reverse transition">
-                  <div class=" position-relative top-50 start-50 translate-middle fs-3">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                </div>
-                <h4 class="h5 card-title col-12 fw-bolder">Phone</h4>
-                <p class="card-text">
-                  +20 010 2517 8918 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <form class="container row justify-content-between my-3 mx-auto ">
+        <form class="row justify-content-between my-3 mx-auto ">
           <div class="col-12 col-lg-6 p-0 pe-lg-3 my-1">
             <input class="form-control border-0 bg-secondary bg-opacity-10 position-relative start-0" type="text"
               placeholder="Your Name" aria-label="default input example">
@@ -588,55 +279,16 @@
       </div>
     </section>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <footer class="bg-dark text-center py-3">
-      <p>Copy Right 2018Shimaa Ibrahim All Rights Reserved</p>
-    </footer>
+
   </main>
+  <footer class="bg-dark text-center py-3">
+    <p>Copy Right 2025 Shimaa Ibrahim All Rights Reserved</p>
+  </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="js/index.js"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
 
-      window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - 70;
-          if (pageYOffset >= sectionTop) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (current && current !== 'home' && link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-          }
-        });
-      });
-    });
-
-    var typed = new Typed('#element', {
-      strings: ["I'm Shimaa ", 'Web Developer', 'Web Designer', 'And Project Manager'],
-      typeSpeed: 30,
-      backSpeed: 30,
-      loop: true,
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const chatIcon = document.getElementById('chat-icon');
-      const chatSection = document.getElementById('chat-section');
-      const closeChat = document.getElementById('close-chat');
-
-      chatIcon.addEventListener('click', () => {
-        chatSection.classList.toggle('active');
-      });
-
-      closeChat.addEventListener('click', () => {
-        chatSection.classList.remove('active');
-      });
-    });
   </script>
 </body>
 

@@ -1,0 +1,67 @@
+:root {
+    scroll-padding-bottom: 5rem;
+    --bs-tertiary-bg-rgb: 255, 206, 206;
+    --main-color: rgb(210, 194, 255);
+    --text-color: rgb(0, 0, 0);
+
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8c300 !important;
+}
+
+.hero {
+    background: url('../images/cinema-hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 120px 20px 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #f8c300;
+    border: none;
+    color: #222;
+}
+
+.btn-primary:hover {
+    background-color: #d4a900;
+    color: #222;
+}
+
+.movies .card,
+.whats-on .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.movies .card img,
+.whats-on .card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.text-warning {
+    color: #f8c300 !important;
+}

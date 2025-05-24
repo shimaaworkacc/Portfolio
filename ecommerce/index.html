@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --main-color: #f3f3f3;
+            --secondary-color: #fff;
+            --accent-color: rgb(188, 79, 255);
+            --text-dark: #3e3a23;
+            --text-light: #fff;
+        }
+
+        body {
+            background: var(--main-color);
+            font-family: "Noto Serif", serif;
+            color: var(--text-dark);
+        }
+
+        .navbar {
+            background: var(--secondary-color) !important;
+        }
+
+        .navbar-brand {
+            color: var(--accent-color) !important;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+        }
+
+        .hero-section {
+            background: linear-gradient(90deg, #3e3a23 60%, purple 100%);
+            color: var(--text-light);
+            padding: 5rem 0 3rem 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+        }
+
+        .btn-amazon {
+            background: var(--accent-color);
+            color: var(--text-dark);
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-amazon:hover {
+            background: rgb(74, 0, 74);
+            color: var(--text-light);
+        }
+
+        .features-section {
+            background: var(--secondary-color);
+            padding: 3rem 0;
+        }
+
+        .feature-icon {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-section {
+            padding: 3rem 0;
+        }
+
+        .category-card {
+            background: var(--secondary-color);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+
+        .category-card img {
+            border-radius: 10px 10px 0 0;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .product-section {
+            padding: 3rem 0;
+        }
+
+        .product-card {
+            background: var(--secondary-color);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: contain;
+            background: #f7f7f7;
+        }
+
+        .deal-section {
+            background: #fff7e6;
+            padding: 2rem 0;
+        }
+
+        .deal-badge {
+            background: var(--accent-color);
+            color: var(--text-light);
+            font-weight: bold;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .newsletter-section {
+            background: var(--secondary-color);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .newsletter-section input[type="email"] {
+            max-width: 300px;
+            display: inline-block;
+        }
+        .card-title {
+      text-overflow: clip;
+      max-height: 2.5rem;
+      overflow: hidden;
+        }
+
+        footer {
+            background: #3e3a23;
+            color: var(--text-light);
+            padding: 1.5rem 0 0.5rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#features">Why Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1>Welcome to E-Commerce</h1>
+            <p>Your one-stop shop for everything you need. Discover millions of products, unbeatable deals, and fast
+                delivery.</p>
+            <a href="#products" class="btn btn-amazon btn-lg mt-3">Start Shopping</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon"><i class="fa fa-truck"></i></div>
+                    <h5>Fast & Free Delivery</h5>
+                    <p>Get your orders delivered quickly and reliably to your doorstep.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon"><i class="fa fa-shield"></i></div>
+                    <h5>Secure Payments</h5>
+                    <p>Shop with confidence using our secure and trusted payment methods.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon"><i class="fa fa-refresh"></i></div>
+                    <h5>Easy Returns</h5>
+                    <p>Not satisfied? Enjoy hassle-free returns and refunds on eligible items.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="category-section" id="categories">
+        <div class="container">
+            <h2 class="mb-4 text-center">Shop by Category</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card category-card">
+                        <img src="images/electronics.jpg" alt="Electronics" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Electronics</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card">
+                        <img src="images/fashion.jpg" alt="Fashion" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Fashion</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card">
+                        <img src="images/home.jpg" alt="Home" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Home & Kitchen</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card">
+                        <img src="images/toys.jpg" alt="Toys" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Toys & Games</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deal-section" id="deals">
+        <div class="container">
+            <div class="deal-badge">Today's Offers</div>
+                 <div class="container my-5">
+    <!-- Swiper container for deals, images loaded from API -->
+    <div class="swiper ribbon-swiper">
+        <div class="swiper-wrapper" id="dealSwiperWrapper">
+            <!-- Slides will be injected by JS -->
+        </div>
+        <!-- Swiper navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- Swiper CSS/JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Fetch deals and initialize swiper
+        async function loadDealSwiper() {
+            const url = 'https://real-time-amazon-data.p.rapidapi.com/products-by-category?category_id=281407&page=1&country=US&sort_by=RELEVANCE&product_condition=ALL&is_prime=false&deals_and_discounts=NONE';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'x-rapidapi-key': '3d4cd7cc60mshd4f32ff40afe3a7p10af89jsn855d562e2794',
+                    'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
+                }
+            };
+            try {
+                const response = await fetch(url, options);
+                const data = await response.json();
+                const products = (data && data.data && Array.isArray(data.data.products)) ? data.data.products : [];
+                let slides = "";
+                products.slice(0, 10).forEach((p, i) => {
+                    slides += `
+                        <div class="swiper-slide">
+                            <img src="${p.product_photo || 'images/product1.jpg'}" style="width:200px; height:auto;" alt="${p.product_title || 'Deal'}">
+                        </div>
+                    `;
+                });
+                document.getElementById("dealSwiperWrapper").innerHTML = slides;
+                new Swiper('.ribbon-swiper', {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    loop: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                        reverseDirection: true // swipe left
+                    },
+                    breakpoints: {
+                        0: { slidesPerView: 2 },
+                        768: { slidesPerView: 3 },
+                        992: { slidesPerView: 4 }
+                    }
+                });
+            } catch (e) {
+                document.getElementById("dealSwiperWrapper").innerHTML = "<div class='text-danger'>Could not load deals.</div>";
+            }
+        }
+        loadDealSwiper();
+    </script>
+    </div>
+        </div>
+
+    </section>
+
+    <!-- Products Section -->
+    <section class="product-section" id="products">
+        <div class="container">
+            <h2 class="mb-4 text-center">Featured Products</h2>
+            <div class="row g-4" id="productList">
+                <!-- Products will be loaded here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h4>Subscribe to our Newsletter</h4>
+            <form class="d-flex justify-content-center mt-3">
+                <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-amazon">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">Contact Us</h2>
+            <p>Questions or feedback? Reach out to our support team!</p>
+            <a href="mailto:support@E-Commerce.com" class="btn btn-amazon">Email Support</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>&copy; 2025 E-Commerce. All Rights Reserved.</div>
+        <div class="mt-2">
+            <a href="#" class="text-light mx-2"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        async function getFromApi() {
+            const url = 'https://real-time-amazon-data.p.rapidapi.com/products-by-category?category_id=281407&page=1&country=US&sort_by=RELEVANCE&product_condition=ALL&is_prime=false&deals_and_discounts=NONE';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'x-rapidapi-key': '3d4cd7cc60mshd4f32ff40afe3a7p10af89jsn855d562e2794',
+                    'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
+                }
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const data = await response.json();
+                if (data && data.data && Array.isArray(data.data.products)) {
+                    displayApiProducts(data.data.products);
+                } else {
+                    document.getElementById("productList").innerHTML = "<p>No products found.</p>";
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById("productList").innerHTML = "<p>Network Error.</p>";
+            }
+        }
+
+        function displayApiProducts(products) {
+            let html = "";
+            products.slice(0, 8).forEach(p => {
+                html += `
+                <div class="col-md-3 col-6">
+                    <div class="card product-card">
+                        <img src="${p.product_photo || 'images/product1.jpg'}" class="card-img-top" alt="${p.product_title}">
+                        <div class="card-body">
+                            <h6 class="card-title fw-lighter">${p.product_title}</h6>
+                            <p class="fw-bold">${p.product_price}</p>
+                            <a href="#" class="btn btn-amazon w-100">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+            document.getElementById("productList").innerHTML = html;
+        }
+                getFromApi();
+
+
+        // const featuredProducts = [
+        //     {
+        //         name: "Bluetooth Speaker",
+        //         price: "24.99",
+        //         image: "images/product1.jpg"
+        //     },
+        //     {
+        //         name: "Running Shoes",
+        //         price: "49.99",
+        //         image: "images/product2.jpg"
+        //     },
+        //     {
+        //         name: "Coffee Maker",
+        //         price: "34.99",
+        //         image: "images/product3.jpg"
+        //     },
+        //     {
+        //         name: "Kids' Building Blocks",
+        //         price: "19.99",
+        //         image: "images/product4.jpg"
+        //     }
+        // ];
+
+    </script>
+</body>
+
+</html>

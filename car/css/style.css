@@ -1,0 +1,22 @@
+:root {
+    scroll-padding-bottom: 5rem;
+    --bs-tertiary-bg-rgb: 255, 206, 206;
+    --main-color: rgb(210, 194, 255);
+    --text-color: rgb(0, 0, 0);
+
+}
+
+.main-color {
+    background-color: var(--main-color);
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    padding: 0;
+    background-color: var(--main-color);
+}

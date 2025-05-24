@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cinema</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whats-on">What's On</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to Cinema</h1>
+            <p>Discover the latest blockbusters and timeless classics in the heart of Cairo.</p>
+            <a href="#movies" class="btn btn-primary btn-lg mt-3">Explore Movies</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">About Us</h2>
+            <p>At Cinema, we offer a premium movie-going experience with state-of-the-art screens, immersive sound, and luxurious seating. Whether you're here for the latest blockbuster or a timeless classic, we ensure an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <!-- What's On Section -->
+    <section id="whats-on" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 text-warning">What's On</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <img src="../images/event1.jpg" class="card-img-top" alt="Special Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Movie Night</h5>
+                            <p class="card-text">Enjoy timeless classics every Thursday at 7pm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <img src="../images/event2.jpg" class="card-img-top" alt="Special Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kids' Matinee</h5>
+                            <p class="card-text">Family-friendly movies every Saturday morning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <img src="../images/event3.jpg" class="card-img-top" alt="Special Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Premiere Night</h5>
+                            <p class="card-text">Be the first to see new releases every Friday at 8pm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="py-5 bg-light movies">
+        <div class="container text-center">
+            <h2 class="mb-4">Now Showing</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/movie1.jpg" class="card-img-top" alt="Movie 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 1</h5>
+                            <p class="card-text">Action | 2h 30m</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/movie2.jpg" class="card-img-top" alt="Movie 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 2</h5>
+                            <p class="card-text">Drama | 2h 15m</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/movie3.jpg" class="card-img-top" alt="Movie 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 3</h5>
+                            <p class="card-text">Comedy | 1h 45m</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <a href="mailto:info@cairocine.com" class="btn btn-dark">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Cinema. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
