@@ -1,9 +1,4 @@
-// document.querySelectorAll('.product-card').forEach(card => {
-//     card.addEventListener('click', () => {
-//         const productLink = 'https://example.com'; // Replace with the actual product link
-//         window.open(productLink, '_blank');
-//     });
-// });
+
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -52,7 +47,6 @@ const swiper = new Swiper('.product-swiper', {
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  // speed: 1000,
   creativeEffect: {
     prev: {
       shadow: true,
@@ -65,10 +59,7 @@ const swiper = new Swiper('.product-swiper', {
       rotate: [0, -100, 0],
     },
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -78,12 +69,12 @@ const ribbonSwiper = new Swiper('.ribbon-swiper', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   loop: true,
-  speed: 3000,
+  speed: 2000,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
   },
-  freeMode: true,
+  freeMode: false,
 });
 document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.counter');
@@ -96,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (current < target) {
         counter.innerText = current + increment;
-        setTimeout(updateCounter, 20);
+        setTimeout(updateCounter, 50);
       } else {
         counter.innerText = target;
       }

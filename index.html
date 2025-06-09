@@ -1,20 +1,20 @@
 <html>
 
 <head>
+  <title>DevFolio</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DevFolio</title>
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap-5.3.5-dist/js/bootstrap.bundle.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <!-- Add in <head> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Add before </body> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
@@ -22,7 +22,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
-  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
   <nav class="navbar navbar-expand-lg w-100 position-fixed top-0 z-3 shadow" id="navbar">
     <div class="w-100 px-5">
       <button class="navbar-toggler h-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,8 +32,8 @@
         <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0">
           <li class="nav-item me-auto">
             <a class="nav-link active-home navbar-brand fw-bold text-uppercase me-5" aria-current="page"
-              href="#home">Shimaa
-              Ibrahim</a>
+              href="#home"><h1 class="h2">Shimaa
+              Ibrahim</h1></a>
           </li>
           <li class="nav-item mx-2 col-1">
             <a class="nav-link" href="#about">About</a>
@@ -50,6 +49,17 @@
     </div>
   </nav>
   <main class="ps-lg-5" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div
+      class="side-bar position-fixed z-0 start-0 h-100 d-flex flex-column align-items-start justify-content-start p-1 row-gap-1">
+      <a href="#about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, odit unde sequi id facere dolor
+        provident minima aliquam ut eligendi commodi placeat vero atque nemo accusamus magni veniam exercitationem!
+        Vitae.</a>
+      <a href="#about">About</a>
+      <a href="#stats">Stats</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
 
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -76,16 +86,18 @@
           <span id="element"></span>
         </div>
       </div>
-      <div class="border-0 my-5 mx-auto p-2 row main-color rounded-3">
+      <div class="border-0 my-5 mx-auto p-2 row main-bg-color rounded-3">
         <div class="col-12 p-0 m-0">
           <h2 class="fw-bold">About Me.</h2>
           <span class="fs-6 fw-light text-black">Web Developer| Web Designer| Project Manager</span>
           <p class="card-text fs-6 text-body-secondary mt-3 ">
-            I am <span class="fw-bold text-secondary">Shimaa Ibrahim</span>. Founder and CEO of S.Tech.S.O corporation. I am a
+            I am <span class="fw-bold text-secondary">Shimaa Ibrahim</span>. Founder and CEO of S.Tech.S.O corporation.
+            I am a
             web developer with over 3 years of experience in the field. I have a passion for creating beautiful and
-            business websites to large-scale e-commerce platforms. My expertise includes front-end and back-end development,
-             UI/UX, and project management. I am committed to delivering high-quality solutions that drive results
-              and exceed client expectations.
+            professional websites to large-scale e-commerce platforms. My expertise includes front-end and back-end
+            development,
+            UI/UX, and project management. I am committed to delivering high-quality solutions that drive results
+            and exceed client expectations.
           </p>
         </div>
       </div>
@@ -95,42 +107,259 @@
       <div class="row text-center">
         <div class="col-md-4 mb-4">
           <div class="stat-box p-4 bg-white shadow rounded">
-            <i class="fa fa-folder-open fa-2x mb-2"></i>
+            <i class="fa fa-folder-open fa-2x mb-2 text-color"></i>
             <h2 class="counter" data-target="30">0</h2>
             <p class="mb-0">Projects Completed</p>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="stat-box p-4 bg-white shadow rounded">
-            <i class="fa fa-briefcase fa-2x mb-2"></i>
+            <i class="fa fa-briefcase fa-2x mb-2 text-color"></i>
             <h2 class="counter" data-target="3">0</h2>
             <p class="mb-0">Years of Experience</p>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="stat-box p-4 bg-white shadow rounded">
-            <i class="fa fa-users fa-2x mb-2"></i>
+            <i class="fa fa-users fa-2x mb-2 text-color"></i>
             <h2 class="counter" data-target="12">0</h2>
             <p class="mb-0">Clients</p>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- <div class="container my-5">
+      <div class="swiper ribbon-swiper">
+        <div class="swiper-wrapper h-50 text-color">
+          <div class="swiper-slide">
+            <p class="w-75 mx-auto">hints of the services and the website.</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="w-75 mx-auto">I leverage AI to deliver faster and more efficient results.</p>
+          </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Discover a portfolio of modern, responsive web solutions tailored for your business needs.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Explore ready-to-use website templates for e-commerce, chat, cinema, car hire, and e-learning platforms.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Benefit from seamless user experiences and intuitive interfaces designed for engagement.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">All products are built with the latest technologies and best practices in web development.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Get dedicated support and customization options to match your unique requirements.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Boost your online presence with fast, secure, and scalable website solutions.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Leverage AI-powered features for smarter, more efficient web applications.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Enjoy easy navigation and visually appealing layouts across all devices.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Contact us for project management, design, and development services tailored to your goals.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Start your digital journey with professional solutions from an experienced web developer.</p>
+            </div>
+            <div class="swiper-slide">
+            <p class="w-75 mx-auto">Your success is our priority—let's build something great together.</p>
+            </div>
+        </div>
+      </div>
+    </div> -->
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="container my-5">
+      <h2 class="text-center mb-4">Design samples</h2>
       <div class="swiper ribbon-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/img1.jpg" style="width:200px; height:auto;" alt="Image 1"></div>
-          <div class="swiper-slide"><img src="images/img2.jpg" style="width:200px; height:auto;" alt="Image 2"></div>
-          <div class="swiper-slide"><img src="images/img3.jpg" style="width:200px; height:auto;" alt="Image 3"></div>
-          <div class="swiper-slide"><img src="images/img4.jpg" style="width:200px; height:auto;" alt="Image 4"></div>
-          <div class="swiper-slide"><img src="images/img5.jpg" style="width:200px; height:auto;" alt="Image 5"></div>
-          <div class="swiper-slide"><img src="images/img6.jpg" style="width:200px; height:auto;" alt="Image 6"></div>
-          <div class="swiper-slide"><img src="images/img7.jpg" style="width:200px; height:auto;" alt="Image 7"></div>
-          <div class="swiper-slide"><img src="images/img8.jpg" style="width:200px; height:auto;" alt="Image 8"></div>
-          <div class="swiper-slide"><img src="images/img9.jpg" style="width:200px; height:auto;" alt="Image 9"></div>
-          <div class="swiper-slide"><img src="images/img10.jpg" style="width:200px; height:auto;" alt="Image 10"></div>
+        <div class="swiper-wrapper h-50 text-color">
+        
+            <div class="swiper-slide">
+            <i class="fa fa-picture-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Images</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-pencil-square-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Text Editor</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-video-camera fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Video</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-square-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Buttons</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-map-marker fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Google Maps</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-star-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Icons</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-picture-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Image Box</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-star-half-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Star Rating</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-list-ul fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Icon Lists</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-sort-numeric-asc fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Counters</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-tasks fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Progress Bars</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-commenting-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Testimonial</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-folder-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Tabs</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-toggle-on fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Toggle</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-share-alt fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Social Icons</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-exclamation-triangle fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Alert</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-anchor fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Menu Anchor</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-magic fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Animated Headline</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-quote-left fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Blockquote</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-slideshare fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Slides</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-bullhorn fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Call to Action</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-picture-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Image ( Carousel / Grid )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-commenting-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Testimonial ( Carousel / Grid )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-list fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Price List</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-table fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Price Table</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-refresh fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Flip Box</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-dot-circle-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Image Hotspot ( Text/Product )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-clock-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Countdown timer</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-link fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Link List</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-caret-down fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Dropdown</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-language fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Languages</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-money fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Currencies</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-envelope-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Contact Form</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-cubes fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Module</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-code-fork fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Custom Hook</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-th-large fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Products Tabs ( Carousel / Grid )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-th fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Products ( Carousel / Grid )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-newspaper-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Blogs ( Carousel / Grid )</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-user fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">My Account</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-search fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Search</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-shopping-basket fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Mini Cart</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-exchange fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">My Compare</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-heart-o fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">My Wishlist</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-envelope fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Email Subscription</p>
+            </div>
+            <div class="swiper-slide">
+            <i class="fa fa-bars fs-1 text-color mb-3"></i>
+            <p class="w-100 mx-auto">Megamenu</p>
+            </div>
         </div>
       </div>
     </div>
@@ -143,15 +372,13 @@
             <img src="images/main-bg.jpeg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
           </div>
           <div class="swiper-slide">
-            <img src="images/car.jpg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
+            <img src="images/logo.png" class="img-fluid w-100 p-5" alt="E-Commerce Website">
           </div>
           <div class="swiper-slide">
-            <img src="images/ecommerce.jpeg" class="img-fluid w-100 p-5" alt="E-Commerce Website">
+            <img src="images/logo.png" class="img-fluid w-100 p-5" alt="E-Commerce Website">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="--swiper-pagination-bullet-size: 1rem;"></div>
       </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -161,8 +388,7 @@
           Products
         </div>
       </div>
-      <div class="row row-gap-4">
-        <!-- Product Card -->
+      <div class="row row-gap-5">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="product-card position-relative text-center shadow border-0 transition">
             <div class="product-image">
@@ -173,11 +399,10 @@
               <p class="text-secondary">$49</p>
               <button class="btn btn-dark reverse-light border-0 transition">Buy</button>
               <button class="btn btn-dark reverse-light border-0 transition"
-                onclick="window.open('ecommerce/index.html', '_blank')">Explore</button>
+                onclick="window.open('https://ecommerce-shimaa.infy.uk', '_blank')">Explore</button>
             </div>
           </div>
         </div>
-        <!-- Product Card -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="product-card position-relative text-center shadow border-0 transition">
             <div class="product-image">
@@ -192,7 +417,6 @@
             </div>
           </div>
         </div>
-        <!-- Product Card -->
         <div class="col-12 col-md-6 col-lg-4" onclick="window.open('cinema/index.html', '_blank')">
           <div class="product-card position-relative text-center shadow border-0 transition">
             <div class="product-image">
@@ -242,22 +466,22 @@
         <div class="social-icons d-flex justify-content-center my-4">
           <a href="https://www.linkedin.com/in/shimaa-ibrahim-33469921b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank" class="icon-link mx-2">
-            <div class="icon-circle">
+            <div class="icon-circle main-bg-color">
               <i class="fa fa-linkedin"></i>
             </div>
           </a>
           <a href="https://www.instagram.com/stechso?igsh=dXVzMmNxeGgzZnBk" target="_blank" class="icon-link mx-2">
-            <div class="icon-circle">
+            <div class="icon-circle main-bg-color">
               <i class="fa fa-instagram"></i>
             </div>
           </a>
           <a href="https://github.com/shimaaworkacc" target="_blank" class="icon-link mx-2">
-            <div class="icon-circle">
+            <div class="icon-circle main-bg-color">
               <i class="fa fa-github"></i>
             </div>
           </a>
           <a href="mailto:shimaaworkacc@gmail.com" target="_blank" class="icon-link mx-2">
-            <div class="icon-circle">
+            <div class="icon-circle main-bg-color">
               <i class="fa fa-envelope"></i>
             </div>
           </a>
